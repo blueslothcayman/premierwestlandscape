@@ -21,34 +21,34 @@
 
   <!-- ✅ Tailwind via CDN with custom config -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'brand-green': '#22c55e',
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            display: ['Teko', 'sans-serif']
-          },
-          boxShadow: {
-            'neon-white': '0 0 15px rgba(255, 255, 255, 0.9)',
-          },
-          animation: {
-            flicker: 'flicker 1.5s infinite alternate',
-          },
-          keyframes: {
-            flicker: {
-              '0%': { opacity: '0.9' },
-              '50%': { opacity: '1' },
-              '100%': { opacity: '0.85' }
-            }
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'brand-green': '#22c55e'
+        },
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+          display: ['Teko', 'sans-serif']
+        },
+        boxShadow: {
+          'neon-white': '0 0 20px rgba(255, 255, 255, 1)',
+        },
+        animation: {
+          flicker: 'flicker 2s infinite alternate',
+        },
+        keyframes: {
+          flicker: {
+            '0%': { opacity: '1' },
+            '50%': { opacity: '0.6' },
+            '100%': { opacity: '1' }
           }
         }
       }
     }
-  </script>
+  }
+</script>
 
   <!-- Optional base Tailwind styles (recommended) -->
   <style>
@@ -221,12 +221,8 @@
 <!-- ▸▸ Valued Clients Logos ◂◂ -->
 <section id="clients" class="bg-[#0a0e17] py-20 px-6 text-center text-white">
   <!-- Header -->
-  <div 
-    data-aos="fade-up" 
-    data-aos-duration="1000"
-    class="mb-12"
-  >
-    <h2 class="text-3xl sm:text-4xl font-bold text-green-400 uppercase tracking-wide">
+  <div data-aos="fade-up" data-aos-duration="1000" class="mb-12">
+    <h2 class="text-3xl sm:text-4xl font-bold text-brand-green uppercase tracking-wide">
       Valued Clients
     </h2>
     <p class="text-gray-400 mt-2 text-sm sm:text-base">
@@ -238,73 +234,117 @@
   <div 
     data-aos="fade-up" 
     data-aos-delay="100" 
-    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 items-center justify-center max-w-6xl mx-auto"
+    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-center max-w-6xl mx-auto"
   >
 
-    <!-- Client Logos 1–15 -->
+    <!-- Logo 1 -->
     <div class="flex items-center justify-center">
-      <img src="client1.png" alt="Client 1 Logo"
-        class="h-24 w-24 rounded-full bg-white shadow-neon-white animate-flicker p-2 transition duration-300 transform hover:scale-110" />
+      <div class="rounded-full p-6 bg-brand-green animate-flicker shadow-neon-white hover:scale-105 transition-transform duration-300">
+        <img src="client1.png" alt="Client 1 Logo" class="h-16 w-16 object-contain rounded-full" />
+      </div>
     </div>
+
+    <!-- Logo 2 -->
     <div class="flex items-center justify-center">
-      <img src="client2.png" alt="Client 2 Logo"
-        class="h-24 w-24 rounded-full bg-white shadow-neon-white animate-flicker p-2 transition duration-300 transform hover:scale-110" />
+      <div class="rounded-full p-6 bg-orange-400 animate-flicker shadow-neon-white hover:scale-105 transition-transform duration-300">
+        <img src="client2.png" alt="Client 2 Logo" class="h-16 w-16 object-contain rounded-full" />
+      </div>
     </div>
+
+    <!-- Logo 3 -->
     <div class="flex items-center justify-center">
-      <img src="client3.png" alt="Client 3 Logo"
-        class="h-24 w-24 rounded-full bg-white shadow-neon-white animate-flicker p-2 transition duration-300 transform hover:scale-110" />
+      <div class="rounded-full p-6 bg-brand-green animate-flicker shadow-neon-white hover:scale-105 transition-transform duration-300">
+        <img src="client3.png" alt="Client 3 Logo" class="h-16 w-16 object-contain rounded-full" />
+      </div>
     </div>
+
+    <!-- Logo 4 -->
     <div class="flex items-center justify-center">
-      <img src="client4.png" alt="Client 4 Logo"
-        class="h-24 w-24 rounded-full bg-white shadow-neon-white animate-flicker p-2 transition duration-300 transform hover:scale-110" />
+      <div class="rounded-full p-6 bg-orange-400 animate-flicker shadow-neon-white hover:scale-105 transition-transform duration-300">
+        <img src="client4.png" alt="Client 4 Logo" class="h-16 w-16 object-contain rounded-full" />
+      </div>
     </div>
+
+    <!-- Logo 5 -->
     <div class="flex items-center justify-center">
-      <img src="client5.png" alt="Client 5 Logo"
-        class="h-24 w-24 rounded-full bg-white shadow-neon-white animate-flicker p-2 transition duration-300 transform hover:scale-110" />
+      <div class="rounded-full p-6 bg-brand-green animate-flicker shadow-neon-white hover:scale-105 transition-transform duration-300">
+        <img src="client5.png" alt="Client 5 Logo" class="h-16 w-16 object-contain rounded-full" />
+      </div>
     </div>
+
+    <!-- Logo 6 -->
     <div class="flex items-center justify-center">
-      <img src="client6.png" alt="Client 6 Logo"
-        class="h-24 w-24 rounded-full bg-white shadow-neon-white animate-flicker p-2 transition duration-300 transform hover:scale-110" />
+      <div class="rounded-full p-6 bg-orange-400 animate-flicker shadow-neon-white hover:scale-105 transition-transform duration-300">
+        <img src="client6.png" alt="Client 6 Logo" class="h-16 w-16 object-contain rounded-full" />
+      </div>
     </div>
+
+    <!-- Logo 7 -->
     <div class="flex items-center justify-center">
-      <img src="client7.png" alt="Client 7 Logo"
-        class="h-24 w-24 rounded-full bg-white shadow-neon-white animate-flicker p-2 transition duration-300 transform hover:scale-110" />
+      <div class="rounded-full p-6 bg-brand-green animate-flicker shadow-neon-white hover:scale-105 transition-transform duration-300">
+        <img src="client7.png" alt="Client 7 Logo" class="h-16 w-16 object-contain rounded-full" />
+      </div>
     </div>
+
+    <!-- Logo 8 -->
     <div class="flex items-center justify-center">
-      <img src="client8.png" alt="Client 8 Logo"
-        class="h-24 w-24 rounded-full bg-white shadow-neon-white animate-flicker p-2 transition duration-300 transform hover:scale-110" />
+      <div class="rounded-full p-6 bg-orange-400 animate-flicker shadow-neon-white hover:scale-105 transition-transform duration-300">
+        <img src="client8.png" alt="Client 8 Logo" class="h-16 w-16 object-contain rounded-full" />
+      </div>
     </div>
+
+    <!-- Logo 9 -->
     <div class="flex items-center justify-center">
-      <img src="client9.png" alt="Client 9 Logo"
-        class="h-24 w-24 rounded-full bg-white shadow-neon-white animate-flicker p-2 transition duration-300 transform hover:scale-110" />
+      <div class="rounded-full p-6 bg-brand-green animate-flicker shadow-neon-white hover:scale-105 transition-transform duration-300">
+        <img src="client9.png" alt="Client 9 Logo" class="h-16 w-16 object-contain rounded-full" />
+      </div>
     </div>
+
+    <!-- Logo 10 -->
     <div class="flex items-center justify-center">
-      <img src="client10.png" alt="Client 10 Logo"
-        class="h-24 w-24 rounded-full bg-white shadow-neon-white animate-flicker p-2 transition duration-300 transform hover:scale-110" />
+      <div class="rounded-full p-6 bg-orange-400 animate-flicker shadow-neon-white hover:scale-105 transition-transform duration-300">
+        <img src="client10.png" alt="Client 10 Logo" class="h-16 w-16 object-contain rounded-full" />
+      </div>
     </div>
+
+    <!-- Logo 11 -->
     <div class="flex items-center justify-center">
-      <img src="client11.png" alt="Client 11 Logo"
-        class="h-24 w-24 rounded-full bg-white shadow-neon-white animate-flicker p-2 transition duration-300 transform hover:scale-110" />
+      <div class="rounded-full p-6 bg-brand-green animate-flicker shadow-neon-white hover:scale-105 transition-transform duration-300">
+        <img src="client11.png" alt="Client 11 Logo" class="h-16 w-16 object-contain rounded-full" />
+      </div>
     </div>
+
+    <!-- Logo 12 -->
     <div class="flex items-center justify-center">
-      <img src="client12.png" alt="Client 12 Logo"
-        class="h-24 w-24 rounded-full bg-white shadow-neon-white animate-flicker p-2 transition duration-300 transform hover:scale-110" />
+      <div class="rounded-full p-6 bg-orange-400 animate-flicker shadow-neon-white hover:scale-105 transition-transform duration-300">
+        <img src="client12.png" alt="Client 12 Logo" class="h-16 w-16 object-contain rounded-full" />
+      </div>
     </div>
+
+    <!-- Logo 13 -->
     <div class="flex items-center justify-center">
-      <img src="client13.png" alt="Client 13 Logo"
-        class="h-24 w-24 rounded-full bg-white shadow-neon-white animate-flicker p-2 transition duration-300 transform hover:scale-110" />
+      <div class="rounded-full p-6 bg-brand-green animate-flicker shadow-neon-white hover:scale-105 transition-transform duration-300">
+        <img src="client13.png" alt="Client 13 Logo" class="h-16 w-16 object-contain rounded-full" />
+      </div>
     </div>
+
+    <!-- Logo 14 -->
     <div class="flex items-center justify-center">
-      <img src="client14.png" alt="Client 14 Logo"
-        class="h-24 w-24 rounded-full bg-white shadow-neon-white animate-flicker p-2 transition duration-300 transform hover:scale-110" />
+      <div class="rounded-full p-6 bg-orange-400 animate-flicker shadow-neon-white hover:scale-105 transition-transform duration-300">
+        <img src="client14.png" alt="Client 14 Logo" class="h-16 w-16 object-contain rounded-full" />
+      </div>
     </div>
+
+    <!-- Logo 15 -->
     <div class="flex items-center justify-center">
-      <img src="client15.png" alt="Client 15 Logo"
-        class="h-24 w-24 rounded-full bg-white shadow-neon-white animate-flicker p-2 transition duration-300 transform hover:scale-110" />
+      <div class="rounded-full p-6 bg-brand-green animate-flicker shadow-neon-white hover:scale-105 transition-transform duration-300">
+        <img src="client15.png" alt="Client 15 Logo" class="h-16 w-16 object-contain rounded-full" />
+      </div>
     </div>
 
   </div>
 </section>
+
 
 
 
