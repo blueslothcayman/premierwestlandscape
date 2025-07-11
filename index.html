@@ -83,14 +83,16 @@
   class="relative min-h-screen flex items-center justify-center px-4 sm:px-6 py-16 sm:py-24 bg-black overflow-hidden"
 >
 
-<!-- VIDEO BACKGROUND (w/ dark blend) -->
-<video autoplay muted loop playsinline
-  class="absolute inset-0 w-full h-full object-cover z-[-1] brightness-75">
-  <source src="hero-small.mp4" type="video/mp4">
-  <!-- fallback -->
-  <img src="hero-fallback.jpg" class="w-full h-full object-cover" alt="Background">
-</video>
-
+<!-- YOUTUBE VIDEO BACKGROUND -->
+<div class="absolute inset-0 z-[-1]">
+  <iframe 
+    src="https://www.youtube.com/embed/QQ1I9gd2VEg?autoplay=1&mute=1&loop=1&playlist=QQ1I9gd2VEg&controls=0&showinfo=0&modestbranding=1&rel=0"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+    class="w-full h-full object-cover">
+  </iframe>
+</div>
 
 
   <!-- FOREGROUND CONTENT -->
