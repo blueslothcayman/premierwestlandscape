@@ -83,18 +83,15 @@
   class="relative min-h-screen flex items-center justify-center px-4 sm:px-6 py-16 sm:py-24 bg-black overflow-hidden"
 >
 
-  <!-- VIDEO BACKGROUND -->
-  <!-- VIDEO BACKGROUND -->
+<!-- VIDEO BACKGROUND (w/ dark blend) -->
 <video autoplay muted loop playsinline
-  class="absolute inset-0 w-full h-full object-cover z-[-1]">
+  class="absolute inset-0 w-full h-full object-cover z-[-1] brightness-75">
   <source src="hero-sunset-golf.mp4" type="video/mp4">
-  <!-- fallback image in case video fails -->
+  <!-- fallback -->
   <img src="hero-fallback.jpg" class="w-full h-full object-cover" alt="Background">
 </video>
 
 
-  <!-- DARK OVERLAY -->
-  <div class="absolute inset-0 bg-black/60 z-0"></div>
 
   <!-- FOREGROUND CONTENT -->
   <div class="relative z-10 w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12">
