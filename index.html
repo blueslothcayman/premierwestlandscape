@@ -33,11 +33,15 @@
 <header x-data="{ open: false }" class="fixed top-0 left-0 w-full bg-[#0b0f13] z-50 shadow-md">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
- <!-- Logo -->
-<a href="#home" class="flex items-center gap-2">
-  <img src="logo-nav.png" alt="Premier West Logo" class="h-10 w-auto" />
-  
-</a>
+    <!-- Logo -->
+    <a href="#home" class="flex items-center gap-2">
+      <img
+        src="logo-nav.png"
+        alt="Premier West Logo"
+        class="h-12 w-auto max-h-12 object-contain"
+        onerror="this.src='fallback-logo.png';"
+      />
+    </a>
 
 
 <!-- DESKTOP NAV (Final Fix) -->
